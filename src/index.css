@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #eef5ff;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.router--wrapper {
+  padding: 2rem;
+  height: 100%;
+}
+
+.main--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2.25rem;
+  margin-inline: auto;
+  max-width: 450px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-inline: auto;
+  max-width: 450px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+}
+
+.description {
+  color: hsl(231, 11%, 63%);
+}
+
+label {
+  font-size: 0.875rem;
+  color: hsl(213, 96%, 18%);
+}
+
+.input--box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input--box input {
+  border: 1px solid hsl(231, 11%, 63%);
+  color: #63646f;
+  outline: 0;
+  border-radius: 8px;
+  height: 3rem;
+  max-width: 450px;
+  padding: 0.75rem;
+}
+
+.input--box input::placeholder {
+  color: hsl(231, 11%, 63%);
+}
+
+footer button {
+  height: 3rem;
+  background: hsl(213, 96%, 18%);
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  justify-contents: center;
+  align-items: center;
+  border-radius: 8px;
+  padding-inline: 1.5rem;
+  margin-top: auto;
+  margin-left: auto;
+  transition: all 0.2s;
+}
+
+footer button:hover {
+  filter: brightness(1.2);
+}
+
+.step--number {
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step--subtitle {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.step--title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
