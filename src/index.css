@@ -17,10 +17,11 @@ body {
 .main--wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 2.25rem;
   margin-inline: auto;
   max-width: 450px;
+  min-height: 360px;
 }
 
 header {
@@ -34,16 +35,16 @@ header {
 .title {
   font-size: 2rem;
   font-weight: 700;
-  color: hsl(213, 96%, 18%);
+  color: #022a56;
 }
 
 .description {
-  color: hsl(231, 11%, 63%);
+  color: #9699ab;
 }
 
 label {
   font-size: 0.875rem;
-  color: hsl(213, 96%, 18%);
+  color: #022a56;
 }
 
 .input--box {
@@ -52,23 +53,48 @@ label {
   gap: 0.5rem;
 }
 
-.input--box input {
-  border: 1px solid hsl(231, 11%, 63%);
+.input--box input,
+.input--box q-input {
+  border: 1px solid #9699ab;
   color: #63646f;
   outline: 0;
   border-radius: 8px;
   height: 3rem;
+  width: 100%;
   max-width: 450px;
   padding: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .input--box input::placeholder {
-  color: hsl(231, 11%, 63%);
+  color: r;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+footer a {
+  color: #9699ab;
+  font-weight: 500;
+  transition: all 0.2s;
+  height: 48px;
+  display: flex;
+  justify-contents: center;
+  align-items: center;
+  border-radius: 8px;
+  padding-inline: 1rem;
+}
+
+footer a:hover {
+  background: #f3f3f3;
 }
 
 footer button {
   height: 3rem;
-  background: hsl(213, 96%, 18%);
   color: #fff;
   font-weight: 500;
   display: flex;
@@ -79,6 +105,14 @@ footer button {
   margin-top: auto;
   margin-left: auto;
   transition: all 0.2s;
+}
+
+footer .next--button {
+  background: #022a56;
+}
+
+footer .confirm--button {
+  background: #483dff;
 }
 
 footer button:hover {
@@ -107,4 +141,30 @@ footer button:hover {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
+}
+
+/* === ADD-ONS === */
+.addon--wrapper {
+  border: 1px solid #dbdadf;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.active p {
+  background: #bee0ff;
+  color: #022a56;
+}
+
+.q-field__messages {
+  color: red;
+  position: absolute;
+  font-size: 0.75rem;
+}
+
+.text-negative input {
+  border: 1px solid red;
 }

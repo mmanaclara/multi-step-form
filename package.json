@@ -9,6 +9,9 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@quasar/app-vite": "^1.2.0",
+    "pinia": "^2.0.32",
+    "quasar": "^2.11.6",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },

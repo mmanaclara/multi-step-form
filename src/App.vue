@@ -6,7 +6,6 @@
           alt="Sidebar background image"
           src="@/assets/images/bg-sidebar-desktop.svg"
         />
-
         <div class="sidebar--info">
           <nav v-for="item in stepsInfo" :key="item.id">
             <RouterLink :to="item.link">
@@ -27,7 +26,9 @@
 
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import StepMenuItem from "../src/components/StepMenuItem.vue";
+import StepMenuItem from "./components/ItemStepMenu.vue";
+
+// eslint-disable-next-line no-unused-vars
 
 const stepsInfo = [
   {
@@ -77,12 +78,11 @@ const stepsInfo = [
   border-radius: 8px;
   overflow: hidden;
   background: #fff;
-  min-height: 500px;
+  min-height: 540px;
 }
 
 aside {
   width: 250px;
-  min-height: 499px;
   border-radius: 8px;
   overflow: hidden;
   margin: 1rem;
